@@ -1,0 +1,26 @@
+import java.io.*;
+class Class
+{
+    public static void main(String args[])throws IOException
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int x,f=0;
+        System.out.println("Enter any number");
+        x = Integer.parseInt(br.readLine());
+        for(int i=1;i<=x;i++)
+        {
+            if(x%i==0)
+            {
+                f+=1;
+            }
+        }
+        if (f==2)
+        {
+            System.out.println(x+" is prime number");
+        }
+        else
+        {
+            System.out.println(x+" is not a prime number");
+        }
+    }   
+}
